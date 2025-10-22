@@ -1,3 +1,13 @@
+function openTab(tabId) {
+  const tabs = document.querySelectorAll(".tab");
+  const menuItems = document.querySelectorAll(".menu li");
+  tabs.forEach(tab => tab.classList.remove("active"));
+  document.getElementById(tabId).classList.add("active");
+  menuItems.forEach(item => item.classList.remove("active"));
+  const menuItem = document.querySelector(`.menu li[data-tab="${tabId}"]`);
+  if (menuItem) menuItem.classList.add("active");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab");
   const menuItems = document.querySelectorAll(".menu li");
