@@ -2,15 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab");
   const menuItems = document.querySelectorAll(".menu li");
 
+  function switchTab(tabId) {
+    tabs.forEach(tab => tab.classList.remove("active"));
+    document.getElementById(tabId).classList.add("active");
+
+    menuItems.forEach(item => item.classList.remove("active"));
+    document.querySelector(`.menu li[data-tab=${tabId}]`).classList.add("active");
+  }
+
   menuItems.forEach(item => {
     item.addEventListener("click", () => {
-      const tabId = item.getAttribute("data-tab");
-
-      tabs.forEach(tab => tab.classList.remove("active"));
-      document.getElementById(tabId).classList.add("active");
-
-      menuItems.forEach(i => i.classList.remove("active"));
-      item.classList.add("active");
+      switchTab(item.getAttribute("data-tab"));
     });
   });
 
@@ -35,4 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   showSlide(slideIndex);
+
+  window.switchTab = switchTab;
 });

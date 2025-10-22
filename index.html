@@ -14,7 +14,7 @@
 
   <nav class="menu">
     <ul>
-      <li data-tab="home">Home</li>
+      <li data-tab="home" class="active">Home</li>
       <li data-tab="about">About Me</li>
       <li data-tab="projects">Projects</li>
       <li data-tab="info">Resume</li>
@@ -31,8 +31,8 @@
           <strong>University of Indianapolis</strong> where I compete as part of the Swimming & Diving team.</p>
           <p>Beyond athletics, I’m passionate about Computer Science and development. 
           I’m a sophomore working towards my Bachelor’s degree in Computer Science with a minor in Mathematics and SWEN.</p>
-          <p>On this site, you’ll find my <a href="#" onclick="document.querySelector('[data-tab=info]').click()">resume / information</a>, 
-          a couple of <a href="#" onclick="document.querySelector('[data-tab=projects]').click()">interactive projects</a>, 
+          <p>On this site, you’ll find my <a href="#" onclick="switchTab('info')">resume / information</a>, 
+          a couple of <a href="#" onclick="switchTab('projects')">interactive projects</a>, 
           and more about me outside of school and sports.</p>
         </div>
       </div>
@@ -54,8 +54,8 @@
 
       <div class="slideshow">
         <img src="images/pet1.jpg" alt="Pet 1" class="slide active">
-        <img src="images/pet2.jpg" alt="Pet 2" class="slide">
-        <img src="images/pet3.jpg" alt="Pet 3" class="slide">
+        <img src="images/pet2.png" alt="Pet 2" class="slide">
+        <img src="images/pet3.png" alt="Pet 3" class="slide">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
       </div>
@@ -63,7 +63,6 @@
 
     <section id="projects" class="tab">
       <h2>Projects</h2>
-
       <div>
         <h3>Mock - Rate My Professor: Full Stack</h3>
         <p>Fully developed a mock “Rate my Professor” application using phpMyAdmin for database, and HTML, CSS for front end.</p>
