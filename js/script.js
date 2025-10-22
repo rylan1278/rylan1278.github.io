@@ -5,18 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
   menuItems.forEach(item => {
     item.addEventListener("click", () => {
       const tabId = item.getAttribute("data-tab");
-
       tabs.forEach(tab => tab.classList.remove("active"));
-
-      const activeTab = document.getElementById(tabId);
-      activeTab.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
     });
   });
 
   let slideIndex = 0;
-  const slides = document.querySelectorAll(".slide");
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
+  const slides = document.querySelectorAll("#about .slide");
+  const prev = document.querySelector("#about .prev");
+  const next = document.querySelector("#about .next");
 
   function showSlide(index) {
     slides.forEach(s => s.classList.remove("active"));
