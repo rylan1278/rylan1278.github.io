@@ -3,163 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <title>Rylan Reasoner</title>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
-    <h1>My Personal Website</h1>
+    <h1>Rylan Reasoner</h1>
   </header>
 
-  <!-- Menu -->
   <nav class="menu">
     <ul>
       <li data-tab="home">Home</li>
       <li data-tab="about">About Me</li>
       <li data-tab="projects">Projects</li>
-      <li data-tab="info">Personal Info</li>
+      <li data-tab="info">Resume</li>
     </ul>
   </nav>
 
-  <!-- Content -->
   <main class="content">
-    <!-- Home Tab -->
-  <section id="home" class="tab active">
-    <div class="image-text-container">
-      <img src="images/image1.jpg" alt="Profile photo" class="main-image">
-      <div class="text-block">
-        <h2>Welcome!</h2>
-        <p>
-          Welcome to my website, I’m <strong>Rylan Reasoner</strong> a student-athlete at the 
-          <strong>University of Indianapolis</strong> where I compete as part of the Swimming & Diving team.
-        </p>
-        <br></br>
-        <p>
-          Beyond athletics, I’m passionate about Computer science and development / programming. 
-          I’m a sophomore working towards my Bachelor’s degree in Computer Science with a minor in Mathematics and SWEN.
-        </p>
-        <br></br>
-        <p>
-          On this site, you’ll find my <a href="#" onclick="document.querySelector('[data-tab=info]').click()">resume / information</a>, 
-          a couple of <a href="#" onclick="document.querySelector('[data-tab=projects]').click()">html effects</a>, 
-          and a bit more about who I am outside of school and sports.
-        </p>
-      </div>
-    </div>
-    <p class="extra-text">
-      Feel free to look around. Like I mentioned before, I included interactive JavaScript effects and other information about me.
-    </p>
-  </section>
-
-
-    <!-- About Me Tab -->
-    <section id="about" class="tab">
+    <section id="home" class="tab active">
       <div class="image-text-container">
-        <img src="images/image5.jpg" class="main-image">
+        <img src="images/image1.jpg" alt="Profile photo" class="main-image">
         <div class="text-block">
-          <h2>About Me</h2>
-          <p>
-            Outside of academics and athletics, I spend a lot of time exploring technology and entertainment. 
-            I playing games online, especially those that let me connect with friends, 
-            and I’m also a big fan of vr, I have an index and used to use it way too much.
-          </p>
-          <br></br>
-          <p>
-            I’m either in the pool, studying, or just running games with friends. 
-            I like stuff that keeps me locked in but is still fun, things like puzzles im a big fan of wordle, sudoku, etc.
-          </p>
-          <br></br>
-          <p>
-            I try to keep a good balance between my sports, school, gaming, and side projects. It's hard to keep track of  
-            it all sometimes, but they all keep me moving and make my life more interesting.
-          </p>
+          <h2>Welcome!</h2>
+          <p>Welcome to my website, I’m <strong>Rylan Reasoner</strong>, a student-athlete at the 
+             <strong>University of Indianapolis</strong> Swimming & Diving team.</p>
+          <p>Beyond athletics, I’m passionate about computer science and programming. 
+             I’m working towards my Bachelor’s degree in Computer Science with a minor in Mathematics and SWEN.</p>
+          <p>On this site, you’ll find my <a href="#" onclick="document.querySelector('[data-tab=info]').click()">resume / information</a>, 
+             a few of my <a href="#" onclick="document.querySelector('[data-tab=projects]').click()">projects</a>, 
+             and more about who I am outside of school and sports.</p>
         </div>
       </div>
     </section>
 
+    <section id="about" class="tab">
+      <div class="image-text-container">
+        <img src="images/image5.jpg" class="main-image" alt="Rylan">
+        <div class="text-block">
+          <h2>About Me</h2>
+          <p>Outside of academics and athletics, I spend a lot of time exploring technology and entertainment. 
+             I play games online with friends and enjoy VR.</p>
+          <p>I’m either in the pool, studying, or running games with friends. I enjoy puzzles like Wordle and Sudoku.</p>
+          <p>I try to keep a good balance between sports, school, gaming, and side projects — they all keep me moving and engaged.</p>
+        </div>
+      </div>
 
-    <!-- Projects Tab -->
-    <section id="projects" class="tab">
-      <h2>Projects</h2>
-      <p>Here are 5 JavaScript effects:</p>
-
-      <!-- Effect 1: Slideshow -->
       <div class="slideshow">
-        <img src="images/image2.png" alt="Slide 1" class="slide active">
-        <img src="images/image3.png" alt="Slide 2" class="slide">
-        <img src="images/image4.png" alt="Slide 3" class="slide">
+        <img src="images/image2.png" alt="Pet 1" class="slide active">
+        <img src="images/image3.png" alt="Pet 2" class="slide">
+        <img src="images/image4.png" alt="Pet 3" class="slide">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
       </div>
-
-      <!-- Effect 2: Typing Effect -->
-      <h3 class="typing"></h3>
-
-      <!-- Effect 3: Collapsible Section -->
-      <button class="collapsible">Click to Expand Info</button>
-      <div class="collapse-content">
-        <p>This is a button for collapse information.</p>
-      </div>
-
-      <!-- Effect 4: Hover Effect -->
-      <div class="hover-box">
-        <p>Hover over me!</p>
-      </div>
-
-      <!-- Effect 5: Simple Form Validation -->
-      <form id="demoForm">
-        <label for="name">Enter your name:</label>
-        <input type="text" id="name" required>
-        <button type="submit">Submit</button>
-        <p id="formMsg"></p>
-      </form>
     </section>
 
-<!-- Personal Info Tab -->
+    <section id="projects" class="tab">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Mock - Rate My Professor:</strong> Full Stack application using phpMyAdmin for database, HTML, CSS for front end.</li>
+        <li><strong>Mock - “Shopping” App:</strong> Full Stack; implemented Svelte pages updating via item index in URL and backend editing via FastAPI.</li>
+        <li><strong>Web3D Golf Game:</strong> Built with THREE.js and A-Frame; includes custom physics engine and collision detection. Hosted <a href="https://rylan1278.github.io/Strategist" target="_blank">here</a>.</li>
+        <li><strong>Custom Gemini Web Page:</strong> Created using N8N workflow, Google Console, and HTML to communicate with Gemini via APIs and webhooks.</li>
+      </ul>
+    </section>
+
     <section id="info" class="tab">
-    <h2>Personal Info</h2>
+      <h2>Resume</h2>
 
-    <h3>Skills</h3>
-    <ul>
-    <li><strong>Computer Skills:</strong> C++, C, Python, Arena, MATLAB, AutoCAD, SQL, HTML, JavaScript, TypeScript</li>
-    <li><strong>Languages:</strong> English</li>
-    </ul>
+      <h3>Skills</h3>
+      <ul>
+        <li><strong>Computer Skills:</strong> C++, C, Python, Arena, MATLAB, Arduino, SQL, PHP, HTML, JavaScript, TypeScript, Svelte</li>
+      </ul>
 
-    <h3>Education</h3>
-    <p><strong>University of Indianapolis</strong> – Bachelor’s of Science<br>
-    August 2024 – Expected May 2026</p>
+      <h3>Education</h3>
+      <p><strong>University of Indianapolis</strong> – Bachelor’s of Science in Computer Science<br>
+      August 2024 – Expected May 2028 (GPA: 3.9)</p>
+      <p><strong>Temple College, Temple TX</strong> – Associate’s Degree, Temple Bioscience Institute<br>
+      August 2022 – May 2024 (GPA: 3.24)</p>
 
-    <p><strong>Temple College, Temple TX</strong> – Associate’s Degree<br>
-    August 2022 – May 2024, Temple Bioscience Institute (GPA: 3.24)</p>
+      <h3>Experience / Projects</h3>
+      <ul>
+        <li><strong>Mock - Rate My Professor:</strong> Full Stack application using phpMyAdmin for database, HTML, CSS for front end.</li>
+        <li><strong>Mock - “Shopping” App:</strong> Full Stack; implemented Svelte pages updating via item index in URL and backend editing via FastAPI.</li>
+        <li><strong>Web3D Golf Game:</strong> Built with THREE.js and A-Frame; includes custom physics engine and collision detection. Hosted <a href="https://rylan1278.github.io/Strategist" target="_blank">here</a>.</li>
+        <li><strong>Custom Gemini Web Page:</strong> Created using N8N workflow, Google Console, and HTML to communicate with Gemini via APIs and webhooks.</li>
+      </ul>
 
-    <h3>Experience</h3>
-    <p><strong>Lake Belton High School, Bronco Expo</strong> – Belton, TX<br>
-    May 2021 – June 2021</p>
-    <ul>
-    <li>Built furniture with a partner without prior knowledge in a restricted amount of time.</li>
-    </ul>
+      <h3>Professional Development</h3>
+      <p><strong>Tools:</strong> Node.js, FastAPI, SvelteKit, Three.js, A-Frame, MySQL, phpMyAdmin, Git, GitHub, Docker, VS Code, JSON, BASH</p>
+      <p><strong>Coursework:</strong> Data Structures, Algorithms, Database Systems, Computer Architecture, Parallel Computing, GUI & Game Programming, Computer Networks, Distributed Computing, Data Encryption, Network Security, Discrete Mathematics, Linear Algebra, Calculus I & II</p>
+      <p><strong>Acer Chromebook Repair (120 hours):</strong> Took a 10-hour online course; successfully repaired 60+ Chromebooks in leisure time.</p>
 
-    <p><strong>Acer, Lake Belton High School – Techspert</strong><br>
-    January 2022 – October 2022</p>
-    <ul>
-    <li>Took an 18-hour online course to learn how to properly repair Chromebooks.</li>
-    <li>Successfully repaired 60+ Chromebooks in leisure time.</li>
-    </ul>
-
-    <h3>Professional Development</h3>
-    <p><strong>University of Indianapolis Swim and Dive</strong> (2024 – Expected 2028)<br>
-    Fundraising for Swim – Working Lucas Oil Events.</p>
-
-    <p><strong>Roy and Jean Potts Swim Center – Volunteer (40 hours)</strong></p>
-    <ul>
-    <li>Cleaned/Disposed of debris and rubble in a weight room that was in the process of being built.</li>
-    <li>Helped direct children along with timing children’s races.</li>
-    </ul>
-
-    <p>Solicited activities in development of leadership skills in a club environment for 6+ years.</p>
-    <p><em>“Rookie of the Year” – 2020 • “MVP of the Year” – 2021–2024</em></p>
+      <h3>Extracurricular Activities</h3>
+      <p><strong>University of Indianapolis Swim and Dive (2024–Expected 2028)</strong><br>
+      Developed leadership skills as team captain through 8+ years of competitive swimming. Earned Rookie of the Year (2020) and MVP (2021–2024).</p>
     </section>
   </main>
 </body>
