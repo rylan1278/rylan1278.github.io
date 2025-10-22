@@ -1,23 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll(".tab");
-  const menuItems = document.querySelectorAll(".menu li");
-
-  menuItems.forEach(item => {
-    item.addEventListener("click", () => {
-      const tabId = item.getAttribute("data-tab");
-      tabs.forEach(tab => tab.classList.remove("active"));
-      document.getElementById(tabId).classList.add("active");
-    });
-  });
-
+  const slides = document.querySelectorAll(".slideshow .slide");
+  const prev = document.querySelector(".slideshow .prev");
+  const next = document.querySelector(".slideshow .next");
   let slideIndex = 0;
-  const slides = document.querySelectorAll("#about .slide");
-  const prev = document.querySelector("#about .prev");
-  const next = document.querySelector("#about .next");
 
   function showSlide(index) {
-    slides.forEach(s => s.classList.remove("active"));
-    slides[index].classList.add("active");
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? "block" : "none";
+    });
   }
 
   prev.addEventListener("click", () => {

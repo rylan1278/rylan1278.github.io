@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rylan Reasoner - Personal Website</title>
+  <title>Rylan Reasoner</title>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
 </head>
@@ -17,53 +17,36 @@
       <li data-tab="home">Home</li>
       <li data-tab="about">About Me</li>
       <li data-tab="projects">Projects</li>
-      <li data-tab="info">Resume / Info</li>
+      <li data-tab="info">Resume / Personal Info</li>
     </ul>
   </nav>
 
   <main class="content">
-
+    <!-- Home Tab -->
     <section id="home" class="tab active">
       <div class="image-text-container">
         <img src="images/image1.jpg" alt="Profile photo" class="main-image">
         <div class="text-block">
           <h2>Welcome!</h2>
-          <p>
-            Hi, I’m <strong>Rylan Reasoner</strong>, a student-athlete at the 
-            <strong>University of Indianapolis</strong>, where I compete as part of the Swimming & Diving team.
-          </p>
-          <p>
-            Beyond athletics, I’m passionate about Computer Science, development, and programming. 
-            I’m pursuing my Bachelor’s in Computer Science with a minor in Mathematics and SWEN.
-          </p>
-          <p>
-            On this site, you can explore my <a href="#" onclick="document.querySelector('[data-tab=info]').click()">resume and personal info</a>, 
-            view my <a href="#" onclick="document.querySelector('[data-tab=projects]').click()">projects</a>, 
-            and learn more about me.
-          </p>
+          <p>Welcome to my website! I’m <strong>Rylan Reasoner</strong>, a student-athlete at the <strong>University of Indianapolis</strong> where I compete as part of the Swimming & Diving team.</p>
+          <p>Beyond athletics, I’m passionate about computer science and programming. I’m working toward my Bachelor’s degree in Computer Science with a minor in Mathematics and SWEN.</p>
+          <p>On this site, you’ll find my <a href="#" onclick="document.querySelector('[data-tab=info]').click()">resume / personal info</a>, <a href="#" onclick="document.querySelector('[data-tab=projects]').click()">projects</a>, and more about me outside of school and sports.</p>
         </div>
       </div>
     </section>
 
+    <!-- About Me Tab -->
     <section id="about" class="tab">
       <div class="image-text-container">
-        <img src="images/image5.jpg" alt="About me" class="main-image">
+        <img src="images/image5.jpg" alt="About me photo" class="main-image">
         <div class="text-block">
           <h2>About Me</h2>
-          <p>
-            Outside of academics and athletics, I enjoy exploring technology and entertainment. 
-            I play online games, particularly ones that let me connect with friends, and I am a VR enthusiast.
-          </p>
-          <p>
-            I spend my time in the pool, studying, or gaming with friends. I enjoy puzzles like Wordle and Sudoku.
-          </p>
-          <p>
-            Maintaining balance between sports, academics, gaming, and side projects keeps me motivated and challenged.
-          </p>
+          <p>Outside of academics and athletics, I spend a lot of time exploring technology and entertainment. I enjoy playing online games with friends and exploring VR experiences.</p>
+          <p>I try to maintain a balance between swimming, school, gaming, and side projects. Each keeps me engaged and pushes me to improve.</p>
         </div>
       </div>
 
-      <h3>My Pets</h3>
+      <h3>Pets Slideshow</h3>
       <div class="slideshow">
         <img src="images/pet1.jpg" alt="Pet 1" class="slide active">
         <img src="images/pet2.jpg" alt="Pet 2" class="slide">
@@ -73,83 +56,70 @@
       </div>
     </section>
 
+    <!-- Projects Tab -->
     <section id="projects" class="tab">
       <h2>Projects</h2>
+      <p>Here are some of my projects:</p>
 
-      <div class="project">
-        <h3>Mock - Rate My Professor: Full Stack</h3>
-        <p>
-          Designed and built a fully functional "Rate My Professor" mock web application to demonstrate full stack development skills.
-          Created the database using <strong>phpMyAdmin</strong> with relational tables for professors, courses, and ratings.
-          The front-end interface was built using <strong>HTML</strong> and <strong>CSS</strong>, and included dynamic forms for users to submit and update ratings.
-          This project emphasized database design, data validation, and responsive front-end layouts.
-        </p>
-        <p><strong>Skills/Tools:</strong> PHP, MySQL, phpMyAdmin, HTML, CSS</p>
-      </div>
+      <p><strong>Mock - Rate My Professor: Full Stack</strong><br>
+      Developed a mock “Rate my Professor” application fully from scratch using phpMyAdmin for database management and HTML/CSS for the front-end. Implemented user authentication, professor profiles, and a dynamic rating system.</p>
 
-      <div class="project">
-        <h3>Mock - “Shopping” App: Full Stack</h3>
-        <p>
-          Extended a pre-made full stack shopping application by implementing dynamic <strong>Svelte</strong> pages that update based on the item index in the URL.
-          Added functionality for items to include price, priority, and description.
-          Developed secure backend access using <strong>FastAPI</strong> to manage item updates, preventing front-end users from editing the backend directly.
-          Focused on integrating front-end and back-end logic seamlessly while maintaining data security.
-        </p>
-        <p><strong>Skills/Tools:</strong> Svelte, FastAPI, Python, HTML, CSS</p>
-      </div>
+      <p><strong>Mock - “Shopping” App: Full Stack</strong><br>
+      Took an existing full stack application and extended it by creating Svelte pages that update dynamically via item index in the URL. Each item displays price, priority, and description, with secure backend modifications through FastAPI inaccessible to front-end users.</p>
 
-      <div class="project">
-        <h3>Web3D Golf Game</h3>
-        <p>
-          Built an interactive 3D golf game using <strong>THREE.js</strong> and <strong>A-Frame</strong>.
-          Developed a custom physics engine for ball movement and collision detection to simulate realistic golfing strategies.
-          Users can play a full hole on a virtual golf course hosted at <a href="https://rylan1278.github.io/Strategist" target="_blank">rylan1278.github.io/Strategist</a>.
-          This project highlights advanced game programming, 3D visualization, and physics simulation skills.
-        </p>
-        <p><strong>Skills/Tools:</strong> THREE.js, A-Frame, JavaScript, Physics Engine Design</p>
-      </div>
+      <p><strong>Web3D Golf Game</strong><br>
+      Built a Web3D golf game using THREE.js and A-Frame, featuring a homemade physics engine and collision detection system. Implemented strategic golfing mechanics such as variable ball velocity, trajectory calculation, and obstacle handling. Hosted at <a href="https://rylan1278.github.io/Strategist" target="_blank">rylan1278.github.io/Strategist</a>.</p>
 
-      <div class="project">
-        <h3>Custom Gemini Web Page</h3>
-        <p>
-          Created a website that communicates directly with the Gemini API using <strong>N8N workflows</strong> and <strong>Google Console</strong>.
-          Designed endpoints and formatting to handle webhooks and data exchange seamlessly.
-          This project emphasized working with APIs, backend automation, and integrating real-time data into a user-facing web interface.
-        </p>
-        <p><strong>Skills/Tools:</strong> HTML, JavaScript, N8N, Google Console, APIs, Webhooks</p>
-      </div>
+      <p><strong>Custom Gemini Web Page</strong><br>
+      Created a web page that communicates directly with Google Gemini using N8N workflows, API integration, and webhooks. Managed formatting and secure data transfer between frontend and Gemini API endpoints.</p>
     </section>
 
+    <!-- Resume / Personal Info Tab -->
     <section id="info" class="tab">
       <h2>Resume / Personal Info</h2>
 
-      <h3>Skills</h3>
-      <ul>
-        <li><strong>Programming:</strong> C++, C, Python, Arena, MATLAB, Arduino, SQL, PHP, HTML, JavaScript, TypeScript, Svelte</li>
-        <li><strong>Tools:</strong> Node.js, FastAPI, SvelteKit, Three.js, A-Frame, MySQL, phpMyAdmin, Git/GitHub, Docker, VS Code, JSON, BASH</li>
-        <li><strong>Languages:</strong> English</li>
-      </ul>
+      <p><strong>Rylan Reasoner</strong></p>
+      <p>kade1278@gmail.com &nbsp;&nbsp; (254)-613-3575 &nbsp;&nbsp; 975 Ridgeoak Dr., Belton TX, 76513</p>
 
-      <h3>Education</h3>
+      <h3>SKILLS</h3>
+      <p>Computer Skills: C++, C, Python, Arena, MATLAB, Arduino, SQL, PHP, HTML, Javascript, TypeScript, Svelte</p>
+
+      <h3>LINKS</h3>
+      <p>GitHub: <a href="https://github.com/rylan1278" target="_blank">https://github.com/rylan1278</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/rylan-reasoner-7a69a3374/" target="_blank">https://www.linkedin.com/in/rylan-reasoner-7a69a3374/</a></p>
+      <p>Portfolio: <a href="https://rylan1278.github.io/" target="_blank">https://rylan1278.github.io/</a></p>
+
+      <h3>EDUCATION</h3>
       <p><strong>University of Indianapolis</strong> – Bachelor’s of Science in Computer Science<br>
-      August 2024 – Expected May 2028 (GPA: 3.9)</p>
+      August 2024 – Expected May 2028 (Current GPA: 3.9)</p>
 
       <p><strong>Temple College, Temple TX</strong> – Associate's Degree<br>
       August 2022 – May 2024, Temple Bioscience Institute (GPA: 3.24)</p>
 
-      <h3>Experience</h3>
-      <p><strong>Acer Chromebook Repair (120 hours)</strong><br>
-      Completed a 10-hour online course to learn Chromebook repair, successfully repairing 60+ devices. Learned troubleshooting, electronics handling, and independent work skills.</p>
+      <h3>EXPERIENCE / PROJECTS</h3>
+      <p><strong>Mock - Rate My Professor: Full Stack</strong><br>
+      Developed a mock “Rate my Professor” application fully from scratch using phpMyAdmin for database management and HTML/CSS for the front-end. Implemented user authentication, professor profiles, and a dynamic rating system.</p>
 
-      <p><strong>Lake Belton High School – Bronco Expo</strong><br>
-      Built furniture with a partner without prior experience, demonstrating teamwork, problem solving, and project planning.</p>
+      <p><strong>Mock - “Shopping” App: Full Stack</strong><br>
+      Took an existing full stack application and extended it by creating Svelte pages that update dynamically via item index in the URL. Each item displays price, priority, and description, with secure backend modifications through FastAPI inaccessible to front-end users. Implemented additional functionality for future scalability.</p>
 
-      <h3>Extracurricular Activities</h3>
-      <p><strong>University of Indianapolis Swim and Dive – Team Captain</strong> (2024–Expected 2028)<br>
-      Developed leadership skills by coordinating practices, mentoring teammates, and representing the team at events.
-      Recognized as <em>Rookie of the Year (2020)</em> and <em>MVP (2021–2024)</em>.</p>
+      <p><strong>Web3D Golf Game</strong><br>
+      Built a Web3D golf game using THREE.js and A-Frame, featuring a homemade physics engine and collision detection system. Implemented strategic golfing mechanics such as variable ball velocity, trajectory calculation, and obstacle handling. Hosted at <a href="https://rylan1278.github.io/Strategist" target="_blank">rylan1278.github.io/Strategist</a>.</p>
+
+      <p><strong>Custom Gemini Web Page</strong><br>
+      Created a web page that communicates directly with Google Gemini using N8N workflows, API integration, and webhooks. Managed formatting and secure data transfer between frontend and Gemini API endpoints.</p>
+
+      <h3>PROFESSIONAL DEVELOPMENT</h3>
+      <p>Tools: Node.js, FastAPI, SvelteKit, Three.js, A-Frame, MySQL, phpMyAdmin, Git, GitHub, Docker, VS Code, JSON, and BASH</p>
+      <p>Coursework: Data Structures, Algorithms, Database Systems, Computer Architecture, Parallel Computing, GUI & Game Programming, Computer Networks, Distributed Computing, Data Encryption, Network Security, Discrete Mathematics, Linear Algebra, and Calculus I & II</p>
+
+      <p><strong>Acer Chromebook Repair - (120 hours)</strong><br>
+      Completed a 10-hour online course to learn proper Chromebook repair techniques. Successfully repaired over 60 Chromebooks independently, diagnosing hardware and software issues, and performing full component replacements when necessary.</p>
+
+      <h3>EXTRACURRICULAR ACTIVITIES</h3>
+      <p><strong>University of Indianapolis Swim and Dive</strong> – 2024–Expected 2028<br>
+      Team captain for 8+ years, developing leadership skills, coordinating practices, and mentoring younger swimmers. Organized team events and fostered a competitive yet supportive club environment. Earned accolades including Rookie of the Year (2020) and MVP (2021–2024).</p>
     </section>
-
   </main>
 </body>
 </html>
