@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const tabId = item.getAttribute("data-tab");
 
       tabs.forEach(tab => tab.classList.remove("active"));
-      const activeTab = document.getElementById(tabId);
-      activeTab.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+
+      menuItems.forEach(i => i.classList.remove("active"));
+      item.classList.add("active");
     });
   });
 
